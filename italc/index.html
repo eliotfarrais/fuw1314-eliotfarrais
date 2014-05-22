@@ -19,7 +19,7 @@
   </div>
 </div>
 <div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
-<a href='#bloque1'>iTalc Master</a> | <a href='#bloque2'>Bloque 2</a> | <a href='#final'>Conclusiones</a>
+<a href='#bloque1'>iTalc Master</a> | <a href='#bloque2'>Ital Slaves</a> | <a href='#bloque3'>Comprobando su funcionamiento</a> | <a href='#bloque4'>Slave bajo windows</a>
 </div>
 <h1><a id='bloque1'>iTalc Master</a></h1>
 	<ul>
@@ -34,29 +34,84 @@
 		</li>
 		<li>
 			<p>Creamos nuestro grupo de usuario y añadimos nuestro usuario con los comandos mostrados en la imagen:<br>
-				<img width="500" height="400" src='./imagenes/3.png'/></p>
+				<img width="500" height="200" src="./imagenes/3.png"></p>
 		</li>
 		<li>
 			<p>damos permisos al grupo italc, para tener acceso a las claves de italc con los comandos mostrados en la imagen:<br>
-				<img width="500" height="400" src='./imagenes/4.png'/></p>
-		</li>
-		<li>
-			<p>damos permisos al grupo italc, para tener acceso a las claves de italc con los comandos mostrados en la imagen:<br>
-				<img width="500" height="400" src='./imagenes/5.png'/></p>
+				<img width="500" height="200" src="./imagenes/4.png"></p>
 		</li>
 		<li>
 			<p>Verificamos que el servicio está iniciado con los comandos mostrados en la imagen:<br>
-				<img width="500" height="400" src='./imagenes/6.png'/></p>
+				<img width="500" height="100" src="./imagenes/6.png"></p>
 		</li>
 		<li>
 			<p>Para que el servicio se inicie automaticamente editamos el siguiente archivo "/home/alumno/.profile" y añadimos
-			<br> "/usr/bin/ica &" al final del fichero.
+			<br> "/usr/bin/ica &" al final del fichero.<br>
 				<img width="500" height="400" src='./imagenes/7.png'/></p>
 		</li>
 	</ul>
-<h1><a id='bloque2'>Bloque 2</a></h1>
-<p>Bla bla bla bla...</p>
-<h1><a id='final'>Conclusiones</a></h1>
-<p>Bla bla bla bla...</p>
+<h1><a id='bloque2'>Slaves</a></h1>
+	<ul>
+		<li>
+			<p> Instalamos el cliente de italc, en el equipo exclavo, con el siguiente comando: apt-get install italc-client<br> y lo configuramos como el maestro:<br>
+				<img width="500" height="200" src='./imagenes/8.png'/></p>
+		</li>
+	</ul>
+<h1><a id='bloque3'>Comprobando su funcionamiento</a></h1>
+	<ul>
+		<li>
+			<p>Iniciamos en el Slave y en el Master el italc en la terminal, con el comando:/usr/bin/ica & </p> 
+		</li>
+		<li>
+			<p>En el Master vamos a el administrador de clases -> clic derecho -> añadir ordenador<br>
+				<img width="350" height="600" src="./imagenes/9.png"/></p>
+		</li>
+		<li>
+			<p>Rellenamos los siguientes campos, rellenando lo que se nos pide<br>
+				<img width="400" height="400" src="./imagenes/10.png"/></p>
+		</li>
+		<li>
+			<p>Una vez añadido, al final, vemos que funciona<br>
+				<img width="500" height="400" src="./imagenes/11.png"/></p>
+		</li>
+	</ul>
+<h1><a id='bloque4'>Slave bajo windows</a></h1>
+	<ul>
+		<li>
+			<p>Miramos la versión del master, y vemos que sea igual que la del Slave, para que funcione.<br>
+			En nuestro caso la 1.0.9. Nos la bajamos de aquí: http://sourceforge.net/projects/italc/files/italc/
+			Nos vamos a la carpeta de descargas e iniciamos el instalador
+			<img width="400" height="400" src="./imagenes/12.png"/></p>
+		</li>
+		<li>
+			<p>Aceptamos la licencia
+			<img width="400" height="400" src="./imagenes/13.png"/></p>
+		</li>
+		<li>
+			<p>Elejimos donde se va a realizar la instalación
+			<img width="400" height="400" src="./imagenes/14.png"/></p>
+		</li>
+		<li>
+			<p>Elejimos donde se va a realizar la instalación
+			<img width="400" height="400" src="./imagenes/15.png"/></p>
+		</li>.
+		<li>
+			<p>Elejimos la instalación solo del cliente
+			<img width="400" height="400" src="./imagenes/16.png"/></p>
+		</li>
+		<li>
+			<p>Le damos a siguiente y terminamos la instalación
+			<img width="400" height="400" src="./imagenes/17.png"/></p>
+		</li>
+		<li>
+			<p>Copiamos la clavwe publica del master en el directorio donde se ha instalado en italc. <br>
+			En la carpeta public
+			<img width="400" height="400" src="./imagenes/18.png"/></p>
+		</li>
+		<li>
+			<p>Detenemos el servicio en italc, y ejecutamos el programa ica.verificamos que funciona:
+			<img width="400" height="400" src="./imagenes/19.png"/></p>
+		</li>
+	</ul>
 </body>
 </html>
